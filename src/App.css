@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionAndEmojisContainer {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 9px;
+}
+.thankYouContainer {
+  padding: 10px;
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loveEmoji {
+  height: 40px;
+  width: 40px;
+}
+.wish {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+}
+.message {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  color: #1e293b;
+}
+.description {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 30px;
+}
+
+@media all and (min-width: 767px) {
+  .description {
+    font-size: 29px;
+  }
+  .listContainer {
+    margin: 2px;
+  }
+  .descriptionAndEmojisContainer {
+    width: 66%;
+  }
+  .thankYouContainer {
+    width: 66%;
+    padding: 10px;
+  }
+  .loveEmoji {
+    height: 80px;
+    width: 80px;
+  }
+  .wish {
+    font-size: 23px;
+  }
+  .message {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

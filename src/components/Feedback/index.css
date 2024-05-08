@@ -1,0 +1,31 @@
+/* Write your CSS code here. */
+.emojisListContainer {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  border: none;
+  background-color: transparent;
+}
+.emoji {
+  height: 49px;
+  width: 49px;
+}
+.reactionName {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+}
+@media all and (min-width: 768px) {
+  .emoji {
+    height: 90px;
+    width: 90px;
+  }
+  .reactionName {
+    font-size: 29px;
+  }
+}
